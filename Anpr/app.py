@@ -22,7 +22,8 @@ st.write("Upload an image or video to detect and read number plates")
 # ---------------- LOAD MODEL ----------------
 @st.cache_resource
 def load_model():
-    return YOLO("best.pt")
+    model_path = os.path.join(os.path.dirname(__file__), "best.pt")
+    return YOLO(model_path)
 
 model = load_model()
 
@@ -141,3 +142,4 @@ if mode == "Video":
 
         cap.release()
         st.success("✅ Video processing completed")
+
