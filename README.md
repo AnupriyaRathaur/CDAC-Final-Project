@@ -167,6 +167,8 @@ Temporary public deployment using tunneling tools
 
 Deployment provides a public URL to access the ANPR system.
 
+https://cdac-ml-project-parallelcomputing.streamlit.app/
+
 📌 Applications
 
 Traffic monitoring and surveillance
